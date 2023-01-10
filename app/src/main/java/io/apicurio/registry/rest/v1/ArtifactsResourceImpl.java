@@ -369,15 +369,6 @@ public class ArtifactsResourceImpl implements ArtifactsResource, Headers {
     }
 
     /**
-     * @see io.apicurio.registry.rest.ArtifactsResource#deleteArtifactVersion(java.lang.Integer, java.lang.String)
-     */
-    @Override
-    public void deleteArtifactVersion(Integer version, String artifactId) {
-        final String versionString = VersionUtil.toString(version);
-        storage.deleteArtifactVersion(null, artifactId, versionString);
-    }
-
-    /**
      * @see io.apicurio.registry.rest.v1.ArtifactsResource#listArtifactRules(java.lang.String)
      */
     @Override
